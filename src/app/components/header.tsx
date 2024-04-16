@@ -12,11 +12,11 @@ const pages = [
   },
   {
     name: 'Sobre',
-    path: '/simular'
+    path: '/#sobre'
   },
   {
     name: 'Entre em contato',
-    path: '/configuracoes'
+    path: '/#contato'
   },
 ]
 
@@ -25,6 +25,7 @@ export function Header() {
   const pathname = usePathname();
 
   return <header className="navbar navbar-expand-lg" data-bs-theme="dark">
+    <img className="scene" data-modifier="30" src="https://s.electerious.com/parallaxscene/p0.png" />
     <div className="container-fluid">
       <Link
         href="/"
