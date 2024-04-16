@@ -32,18 +32,27 @@ function Home() {
     })
   }, [])
   return (
-    <main>
-      <img className="scene" data-modifier="30" src="https://s.electerious.com/parallaxscene/p0.png" />
-      <img className="scene" data-modifier="18" src="https://s.electerious.com/parallaxscene/p1.png" />
-      <img className="scene" data-modifier="12" src="https://s.electerious.com/parallaxscene/p2.png" />
-      <img className="scene" data-modifier="8" src="https://s.electerious.com/parallaxscene/p3.png" />
-      <img className="scene" data-modifier="6" src="https://s.electerious.com/parallaxscene/p4.png" />
-      <img className="scene" data-modifier="0" src="https://s.electerious.com/parallaxscene/p6.png" />
-      <section className="welcome">
-        <h1>Inovação e tecnologia ao seu alcance</h1>
-        <p>Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável</p>
-        <button type="button" className="btn btn-sm btn-info">Conheça nossos serviços</button>
-      </section>
+    <>
+      <div className="parallax">
+        <img className="scene" data-modifier="30" src="/sky.webp" />
+        <img className="scene" data-modifier="20" src="/mountain.webp" />
+        <img className="scene" data-modifier="18" src="/man.webp" />
+      </div>
+      <article>
+        <div className="welcome">
+          <section className="welcome-info">
+            <h1>Inovação e tecnologia ao seu alcance</h1>
+            <p>Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável</p>
+            <button type="button" className="btn btn-sm btn-info">Conheça nossos serviços</button>
+          </section>
+        </div>
+        <div className="about">
+          <section>
+            <h3>Sobre nosso trabalho</h3>
+            <p>Na Loewe Soluções em Software, nós nos dedicamos a desenvolver aplicações inovadoras para a gestão de negócios. Nossa equipe é composta por profissionais altamente qualificados e apaixonados por tecnologia, comprometidos em entregar soluções que transformam a maneira como as empresas operam. Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável. Junte-se a nós e leve seu negócio ao próximo nível com inteligência e tecnologia.</p>
+          </section>
+        </div>
+      </article>
       {/* <div className="main d-flex">
         <article className="d-flex flex-column my-5 container">
           <section className="welcome">
@@ -62,7 +71,7 @@ function Home() {
           </section>
         </article>
       </div> */}
-    </main>
+    </>
   );
 
 }
@@ -70,10 +79,10 @@ function Home() {
 export default function Page() {
 
   return (
-    <>
+    <main>
       <Layout>
         <Home />
       </Layout>
-    </>
+    </main>
   );
 }
