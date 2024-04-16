@@ -8,36 +8,9 @@ import { Layout } from "./shared/layout";
 import * as basicScroll from 'basicscroll'
 
 function Home() {
-  useEffect(() => {
-    // More information about this technique/pen:
-    // https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7#.o1kkd4cte
-
-    document.querySelectorAll('.scene').forEach((elem) => {
-
-      const modifier = elem.getAttribute('data-modifier') as any
-
-      basicScroll.create({
-        elem: elem,
-        from: 0,
-        to: 519,
-        direct: true,
-        props: {
-          '--translateY': {
-            from: '0',
-            to: `${10 * modifier}px`
-          }
-        }
-      }).start()
-
-    })
-  }, [])
   return (
     <>
-      <div className="parallax">
-        <img className="scene" data-modifier="30" src="/sky.webp" />
-        <img className="scene" data-modifier="20" src="/mountain.webp" />
-        <img className="scene" data-modifier="18" src="/man.webp" />
-      </div>
+      <Parallax />
       <article>
         <div className="welcome">
           <section className="welcome-info">
@@ -58,6 +31,38 @@ function Home() {
     </>
   );
 
+}
+
+function Parallax() {
+  useEffect(() => {
+    // More information about this technique/pen:
+    // https://medium.com/@electerious/parallax-scrolling-with-js-controlled-css-variables-63cfe96820c7#.o1kkd4cte
+
+    document.querySelectorAll('.parallax .scene').forEach((elem) => {
+      const modifier = elem.getAttribute('data-modifier') as any
+
+      basicScroll.create({
+        elem: elem,
+        from: 0,
+        to: 519,
+        direct: true,
+        props: {
+          '--translateY': {
+            from: '0',
+            to: `${10 * modifier}px`
+          }
+        }
+      }).start()
+    })
+  }, [])
+
+  return (
+    <div className="parallax">
+      <img className="scene" data-modifier="30" src={`${process.env.BASE_PATH}/sky.webp`} />
+      <img className="scene" data-modifier="20" src={`${process.env.BASE_PATH}/mountain.webp`} />
+      <img className="scene" data-modifier="18" src={`${process.env.BASE_PATH}/man.webp`} />
+    </div>
+  )
 }
 
 export default function Page() {
