@@ -1,5 +1,5 @@
 const isDev = process.env.NODE_ENV === 'development';
-const basePath = isDev ? '' : '/';
+const basePath = isDev ? '' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
