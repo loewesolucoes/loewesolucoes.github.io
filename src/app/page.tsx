@@ -14,7 +14,7 @@ function Home() {
 
     document.querySelectorAll('.scene').forEach((elem) => {
 
-      const modifier = elem.getAttribute('data-modifier')
+      const modifier = elem.getAttribute('data-modifier') as any
 
       basicScroll.create({
         elem: elem,
