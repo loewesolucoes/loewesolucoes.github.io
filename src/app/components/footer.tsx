@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer>
       <LogoFooter className="logo" src={`${process.env.BASE_PATH}/logo-footer.svg`} />
-      <div className="social-links">
+      <div id='contato' className="social-links">
         <a href="https://wa.me/+5551995142689" target="_blank" rel="noopener noreferrer">
           <WhatsIcon className="social-icon" src={`${process.env.BASE_PATH}/whats.svg`} />
         </a>
