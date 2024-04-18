@@ -63,11 +63,16 @@ footer {
   width: 100vw;
   min-height: 25vh;
   background: url("/sky.webp");
-  background-size: cover;
   padding: 30px 0;
   color: #fff;
 
   .logo {
+    width: 85vw;
+    max-width: 361px;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
   }
 
   .copyright {
@@ -77,7 +82,7 @@ footer {
       color: #fff;
 
       &:hover {
-        color: rgba(#fff, .7);
+        color: rgba(#fff, 0.7);
       }
     }
 
@@ -112,6 +117,7 @@ footer {
   }
 
   @include media-breakpoint-up(md) {
+    background-size: cover;
     padding: 0 20px;
     flex-direction: row;
     gap: 0;
