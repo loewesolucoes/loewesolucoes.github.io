@@ -6,6 +6,7 @@ import "./page.scss";
 
 import { Layout } from "./shared/layout";
 import * as basicScroll from 'basicscroll'
+import Link from "next/link";
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
             <h1>Inovação e tecnologia ao seu alcance</h1>
             <hr />
             <p>Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável</p>
-            <button type="button" className="btn btn-sm btn-info">Conheça nossos serviços</button>
+            <Link href="/#sobre" className="btn btn-sm btn-info">Conheça nossos serviços</Link>
           </section>
         </div>
         <div className="about">
