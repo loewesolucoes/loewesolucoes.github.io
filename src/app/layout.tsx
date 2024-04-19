@@ -19,6 +19,21 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <title>Loewe Soluções em Software</title>
+        <meta name="title" content="Loewe Soluções em Software" />
+        <meta name="description" content="Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://loewesolucoes.github.io/" />
+        <meta property="og:title" content="Loewe Soluções em Software" />
+        <meta property="og:description" content="Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável" />
+        <meta property="og:image" content="/site.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://loewesolucoes.github.io/" />
+        <meta property="twitter:title" content="Loewe Soluções em Software" />
+        <meta property="twitter:description" content="Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável" />
+        <meta property="twitter:image" content="/site.png" />
+
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
