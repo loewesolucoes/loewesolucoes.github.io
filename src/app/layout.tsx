@@ -5,9 +5,13 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "Loewe Soluções em Software";
+const description = "Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável";
+
+
 export const metadata: Metadata = {
-  title: "Loewe Soluções em Software",
-  description: "Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável",
+  title: title,
+  description: description,
 };
 
 export default function RootLayout({
@@ -18,20 +22,18 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <title>Loewe Soluções em Software</title>
-        <meta name="title" content="Loewe Soluções em Software" />
-        <meta name="description" content="Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável" />
+        <meta name="title" content={title} />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://loewesolucoes.github.io/" />
-        <meta property="og:title" content="Loewe Soluções em Software" />
-        <meta property="og:description" content="Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content="/site.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://loewesolucoes.github.io/" />
-        <meta property="twitter:title" content="Loewe Soluções em Software" />
-        <meta property="twitter:description" content="Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content="/site.png" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -40,7 +42,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#506a81" />
         <Script id="gtm" strategy="afterInteractive">
           {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
