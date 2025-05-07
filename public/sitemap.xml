@@ -8,12 +8,25 @@
 
 <url>
   <loc>https://loewesolucoes.github.io/</loc>
-  <lastmod>2024-04-16T18:03:45+00:00</lastmod>
+  <lastmod>2024-06-25T17:27:21+00:00</lastmod>
+</url>
+<url>
+  <loc>https://loewesolucoes.github.io/gestao-financeira/</loc>
+  <lastmod>2024-06-25T17:27:21+00:00</lastmod>
+</url>
+<url>
+  <loc>https://loewesolucoes.github.io/gestao-trade/</loc>
+  <lastmod>2024-06-25T17:27:21+00:00</lastmod>
 </url>
 <url>
   <loc>https://loewesolucoes.github.io/gestao-construcao/</loc>
   <lastmod>2024-04-16T18:03:45+00:00</lastmod>
 </url>
+
+<sitemap>
+  <loc>https://loewesolucoes.github.io/gestao-financeira/sitemap.xml</loc>
+  <lastmod>2024-06-25T17:27:21+00:00</lastmod>
+</sitemap>
 
 
 </urlset>
