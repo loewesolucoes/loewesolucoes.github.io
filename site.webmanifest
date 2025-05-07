@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "id": "loewe-solucoes-em-software",
+    "name": "Loewe Soluções em Software",
+    "short_name": "Loewe Soluções em Software",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,5 +16,6 @@
     ],
     "theme_color": "#506a81",
     "background_color": "#506a81",
-    "display": "standalone"
+    "display": "standalone",
+    "lang": "pt-br"
 }
