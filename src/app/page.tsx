@@ -21,17 +21,58 @@ function Home() {
             <Link href="/#sobre" className="btn btn-sm btn-info">Conheça nossos serviços</Link>
           </section>
         </div>
-        <div className="about">
-          <section>
-            <h2 id="sobre">Sobre nosso trabalho</h2>
-            <hr />
-            <p>Na Loewe Soluções em Software, nós nos dedicamos a desenvolver aplicações inovadoras para a gestão de negócios. Nossa equipe é composta por profissionais altamente qualificados e apaixonados por tecnologia, comprometidos em entregar soluções que transformam a maneira como as empresas operam. Com uma abordagem centrada no cliente, oferecemos ferramentas personalizadas que otimizam processos, aumentam a eficiência e impulsionam o crescimento sustentável. Junte-se a nós e leve seu negócio ao próximo nível com inteligência e tecnologia.</p>
-          </section>
-        </div>
+        <About />
       </article>
     </>
   );
 
+}
+
+function About() {
+  return <div className="about">
+    <section>
+      <h2 id="sobre">Sobre nosso trabalho</h2>
+      <hr />
+      <p>
+        Na Loewe Soluções em Software, desenvolvemos aplicações inovadoras para gestão de negócios.
+        Nossa equipe é formada por profissionais apaixonados por tecnologia, focados em entregar soluções que transformam a operação das empresas.
+        Oferecemos ferramentas personalizadas para otimizar processos, aumentar a eficiência e impulsionar o crescimento sustentável.
+        Leve seu negócio ao próximo nível com inteligência e tecnologia.
+      </p>
+
+      <div className="services">
+        <section className="my-3">
+          <h3>Gestão Financeira</h3>
+          <img className="img-fluid img-thumbnail my-3" src={`${process.env.BASE_PATH}/gestao-financeira.png`} alt="Gestão financeira" />
+          <p>
+            <Link href="/gestao-financeira" target="_blank">Gestão financeira</Link> é uma solução completa para pessoas físicas. Controle de caixa, balancetes automatizados, registro de notas fiscais e gerenciamento de investimentos em uma interface intuitiva e segura. Acesse suas informações de qualquer lugar e tome decisões com mais eficiência e precisão.
+            <br />
+            <Link href="/gestao-financeira" className="btn btn-secondary my-3" target="_blank">Saiba mais sobre Gestão financeira</Link>
+          </p>
+        </section>
+        <hr className="w-100" />
+        <section className="my-3">
+          <h3>Gestão de Trade</h3>
+          <img className="img-fluid img-thumbnail my-3" src={`${process.env.BASE_PATH}/gestao-trade.png`} alt="Gestão de trade" />
+          <p>
+            <Link href="/gestao-trade" target="_blank">Gestão de trade</Link> é a plataforma ideal para traders e investidores. Monitore ações, visualize gráficos interativos e utilize indicadores de Fibonacci para aprimorar suas estratégias. (Em desenvolvimento)
+            <br />
+            <Link href="/gestao-trade" className="btn btn-secondary my-3" target="_blank">Saiba mais sobre Gestão de Trade</Link>
+          </p>
+        </section>
+        <hr className="w-100" />
+        <section className="my-3">
+          <h3>Gestão de Construção</h3>
+          <img className="img-fluid img-thumbnail my-3" src={`${process.env.BASE_PATH}/gestao-construcao.png`} alt="Gestão de construção" />
+          <p>
+            <Link href="/gestao-construcao" target="_blank">Gestão de construção</Link> é um sistema pessoal para gerenciamento de obras, facilitando o acompanhamento de projetos e recursos. (Em desenvolvimento)
+            <br />
+            <Link href="/gestao-construcao" className="btn btn-secondary my-3" target="_blank">Saiba mais sobre Gestão de construção</Link>
+          </p>
+        </section>
+      </div>
+    </section>
+  </div>;
 }
 
 function Parallax() {
